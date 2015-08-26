@@ -10,13 +10,13 @@
 	</div>
 	<script type="text/javascript">
 	    function randNum(n, iStart, iEnd){
-		    var aArray = [];
-		    var iChoice, iStart, iEnd;
-		    var iChoice = iEnd - iStart + 1;
-		    for (var j = 0; j < n; j++){
-				var num =  Math.floor(Math.random() * iChoice + iStart);
-				aArray.push(num);
-			}
+		var aArray = [];
+		var iChoice, iStart, iEnd;
+		var iChoice = iEnd - iStart + 1;
+		for (var j = 0; j < n; j++){
+		    var num =  Math.floor(Math.random() * iChoice + iStart);
+		    aArray.push(num);
+		    }
 		    return aArray;
 		}
 	    var result = randNum(10, 10, 100);
