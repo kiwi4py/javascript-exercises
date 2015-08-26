@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>随机数</title>	
+</head>
+<body>
+	<!-- 用js实现随即选取10--100之间的10个数字，存入一个数组，并排序。 -->
+	<div id="myDiv">
+		<p>This is a paragraph.</p>
+	</div>
+	<script type="text/javascript">
+		function randNum(n, iStart, iEnd){
+			var aArray = [];
+		    var iChoice, iStart, iEnd;
+		    var iChoice = iEnd - iStart + 1;
+		    for (var j = 0; j < n; j++){
+				var num =  Math.floor(Math.random() * iChoice + iStart);
+				aArray.push(num);
+			}
+			return aArray;
+		}
+	    var result = randNum(10, 10, 100);
+	    alert(result.sort())
+	</script>
+	<script type="text/javascript">
+		var n = Math.random();
+		alert(n);
+	</script>
+</body>
+</html>
